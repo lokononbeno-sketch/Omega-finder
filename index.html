@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b25">
+  <meta name="description" content="OMEGA FINDER — assistant personnel pour retrouver les pistes de récupération de ses anciens comptes sociaux.">
+  <title>OMEGA FINDER — Personal Edition</title>
+  <link rel="manifest" href="./manifest.json"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div><div class="ambient ambient-two" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="OMEGA FINDER accueil"><span class="brand-mark">Ω</span><span>OMEGA <strong>FINDER</strong><small>PERSONAL EDITION</small></span></a>
+    <span class="private-label"><span class="status-dot"></span> Espace personnel</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span></span> ASSISTANT DE RÉCUPÉRATION NUMÉRIQUE</div>
+      <h1>Retrouve la trace de<br><span>tes anciens comptes.</span></h1>
+      <p class="hero-copy">Un espace personnel pour organiser les informations qui peuvent t'aider à retrouver tes anciens profils, en commençant par Facebook.</p>
+    </section>
+    <section class="search-card" aria-labelledby="search-title">
+      <div class="card-heading"><div class="facebook-mark" aria-hidden="true">f</div><div><p class="card-kicker">RECHERCHE PRIORITAIRE</p><h2 id="search-title">Ancien compte Facebook</h2></div><span class="beta-tag">BÊTA</span></div>
+      <form id="account-form" novalidate>
+        <label for="email">Adresse e-mail possible <span>(facultatif)</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="exemple@domaine.com">
+        <div class="field-separator"><span>ET / OU</span></div>
+        <label for="phone">Numéro de téléphone possible <span>(facultatif)</span></label>
+        <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+229 00 00 00 00">
+        <label for="profile">Nom du profil Facebook <span>(facultatif)</span></label>
+        <input id="profile" name="profile" type="text" maxlength="80" placeholder="Ex. : Benoli Salah">
+        <button class="primary-button" type="submit"><span aria-hidden="true">⌕</span> Préparer ma recherche</button>
+        <p class="form-note">Renseigne au moins une information. Rien n'est envoyé à un serveur dans cette première version.</p>
+      </form>
+      <div id="feedback" class="feedback" role="status" aria-live="polite" hidden></div>
+    </section>
+    <section class="notice"><span class="notice-icon" aria-hidden="true">i</span><p><strong>Transparence :</strong> cette première version est une interface. Elle ne consulte pas encore Facebook et ne peut pas confirmer l'existence d'un compte ni sa dernière activité. Nous ajouterons uniquement des méthodes officielles et des sources auxquelles tu as légitimement accès.</p></section>
+    <section class="features" aria-label="Fonctions prévues">
+      <article><span class="feature-icon">⌕</span><div><h3>Recherche guidée</h3><p>Organiser les pistes à partir de tes propres informations.</p></div></article>
+      <article><span class="feature-icon">▤</span><div><h3>Historique privé</h3><p>Une future liste des recherches que tu décides de conserver.</p></div></article>
+      <article><span class="feature-icon">◇</span><div><h3>Confidentialité</h3><p>Aucun mot de passe demandé, deviné ou testé.</p></div></article>
+    </section>
+  </main>
+  <footer><span>Ω OMEGA FINDER</span><span>PERSONAL EDITION · VERSION 0.1.0</span></footer>
+  <script src="./app.js" defer></script>
+</body></html>
