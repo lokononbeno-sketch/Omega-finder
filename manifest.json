@@ -1,0 +1,13 @@
+{
+  "id":"./",
+  "name":"OMEGA FINDER — Personal Edition",
+  "short_name":"OMEGA FINDER",
+  "description":"Assistant personnel pour organiser la récupération de ses anciens comptes sociaux.",
+  "lang":"fr",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "orientation":"portrait",
+  "background_color":"#0b0818",
+  "theme_color":"#100b25"
+}
